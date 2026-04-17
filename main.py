@@ -43,8 +43,9 @@ for file in text_files:
             contents[i] = new_x
         
         with open(output_path / name, 'w', encoding='utf-8') as f_one:
-            f_one.write(f'\n'.join(contents))
+            f_one.write('\n'.join(contents))
 
 elapsed = (time.time() - start) * 1000
 print(f'Finished in {elapsed:.3f} ms')
+input()
 exit()
