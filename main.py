@@ -31,7 +31,7 @@ while True:
 for file in text_files:
     with open(file, encoding='utf-8') as f:
         contents = f.readlines()
-        name = file.name.removesuffix('.txt') + '_encoded_key' + str(key)
+        name = file.name.removesuffix('.txt') + '_encoded_key' + str(key) + '.txt'
         for i, x in enumerate(contents):
             new_x = ''
             y_count = len(x)-1
